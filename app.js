@@ -31,9 +31,9 @@ const addDiv = () => {
 
     //Change game state
     blocksAdded = true;
-
+    
     //Get the newly created divs - need better variable name
-    let divs2 = document.querySelectorAll('.square');
+    let divs2 = document.querySelectorAll('.square, .red');
 
     //Iterate through divs2 array and listen for clicks - change div property through class
     if(blocksAdded){
