@@ -1,21 +1,70 @@
-#add{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(90deg, rgb(219, 190, 190), rgb(161, 161, 207)) ;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header{
+    background-color: rgba(151, 203, 245, .2);
+    margin: 0;
+    padding: 0;
+}
+
+.ApolloSolo{
+    width: auto;
+    height: 2.1rem;
+    padding-left: .5rem;
+    padding-right: .2rem;
+    
+}
+
+.reverse{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+h1{
+    padding: 0 2rem;
+}
+
+.nav-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+/****Game Styles*****/
+.add{
     width: 25%;
     height: 2rem;
 }
 
 #pick-number{
-    width: 25%;
+    width: 100%;
     height: 2rem;
 }
 
-#clear{
+.clear{
     width: 25%;
     height: 2rem;
 }
 
 .container{
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
 }
 

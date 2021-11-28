@@ -7,10 +7,13 @@ let blocksAdded = false; //game state - may not need this, but used it in earlie
 
 //Take user imput and change to and return as number
 const changeToNum = () =>{
-    return parseInt(number.value)
+    if(!number.value){          //if no value entered - add 100 defult
+        return 100;
+    }
+    else{return parseInt(number.value);}
 }
 
-//Make a div and return that value to store
+//Make a div and return that value to store it
 const makeDiv = () =>{
     const newDiv = document.createElement('div');
     return newDiv;
@@ -55,3 +58,22 @@ const addDiv = () => {
 
 //Play game - need to change name to match action
 addButton.addEventListener('click', addDiv);
+
+//Dropdown Menu
+const dropMenu = () =>{
+    document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+window.onclick = function(event){
+    if(!event.target.matches('.dropbtn')){
+        let dropDowns = document.getElementsByClassName("dropdown-content");
+        for(let i = 0; i < dropDowns.length; i++){
+            let opendDropdowns = dropDowns[i];
+            if(opendDropdowns.classList.contains('show')){
+                opendDropdowns.classList.remove('show');
+            }
+        }
+    }
+
+}
