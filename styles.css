@@ -1,0 +1,37 @@
+#add{
+    width: 25%;
+    height: 2rem;
+}
+
+#pick-number{
+    width: 25%;
+    height: 2rem;
+}
+
+#clear{
+    width: 25%;
+    height: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pixle-holder{
+    display: grid;
+    grid-template-columns: repeat(10, 0fr);
+    gap: 0px;
+}
+
+.square{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    border: solid black 1px;
+}
+
+.red{
+    background-color: red;
+}
