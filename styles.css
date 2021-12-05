@@ -70,13 +70,13 @@ h1{
 
 .pixle-holder{
     display: grid;
-    grid-template-columns: repeat(10, 0fr);
+    grid-template-columns: repeat(25, 0fr);
     gap: 0px;
 }
 
 .square{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(255, 255, 255);
     border: solid black 1px;
 }
